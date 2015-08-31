@@ -1,0 +1,31 @@
+@keyframes growLeft {
+    from {
+        transform: scale(1, 1);
+        transform-origin: top left;
+    }
+
+    to {
+        transform: scale(3, 3);
+        transform-origin: top left;
+    }
+}
+
+.growLeft {
+    animation-name: growLeft;
+}
+
+@keyframes growRight{
+    from {
+        transform: scale(1, 1);
+        transform-origin: top right;
+    }
+
+    to {
+        transform: scale(3, 3);
+        transform-origin: top right;
+    }
+}
+
+.growRight {
+    animation-name: growRight;
+}

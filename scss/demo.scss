@@ -1,0 +1,62 @@
+@import 'base';
+
+body {
+    background: #f8f8f8;
+    /*color: #FD6CA3;*/
+    color: #655F61;
+    font-family: "proxima-nova", Arial, sans-serif;
+}
+
+h2 {
+    text-shadow: 0 1px 0 #FFF;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    border-bottom: 1px solid #DEDBDB;
+    padding-bottom: 20px;
+}
+
+h4 {
+    font-weight: 300;
+    letter-spacing: .3em;
+    color: #807C7C;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.demo-div {
+    width: 150px;
+    height: 50px;
+    background: #fff;
+    color: #FD6CA3;
+    text-align: center;
+    line-height: 50px;
+    font-family: fff,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    box-shadow: 1px 1px 1px #F1EAEA;
+    margin-left: 10px;
+    display: inline-block;
+    cursor: pointer;
+
+    &.flipYDemo:hover {
+        @include animate(flipX, 1s, 1);
+    }
+
+    &.flipXDemo:hover {
+        @include animate(flipY, 1s, 1);
+    }
+
+    &.growLeftDemo:hover {
+        @include animate(growLeft, 1s, 1);
+    }
+
+    &.growRightDemo:hover {
+        @include animate(growRight, 1s, 1);
+    }
+}
+
+.loader {
+    @include animate(move, 1s, infinite);
+}

@@ -1,0 +1,10 @@
+@import "flip";
+@import "grow";
+
+@mixin animate($type, $time, $iteration-count) {
+    -webkit-animation: $type $time $iteration-count ease;
+     -moz-animation: $type $time $iteration-count ease;
+      -ms-animation: $type $time $iteration-count ease;
+          animation: $type $time $iteration-count ease;
+          animation-fill-mode:forwards;
+}
